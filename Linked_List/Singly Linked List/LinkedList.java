@@ -1,5 +1,3 @@
-package Linked_List;
-
 import java.util.*;
 
 
@@ -10,6 +8,24 @@ class Linked_List{
     public static void main(String[] args) {
         
         MyLinkedList linkedlist = new MyLinkedList();
+        for(int i = 0;i<10;i++){
+            linkedlist.insertAtLast(i);
+        }
+
+        System.out.println(linkedlist);
+
+        // Deletion From Head
+        linkedlist.deleteNode(0);
+        System.out.println(linkedlist);
+
+        // Deletion from mid
+
+        linkedlist.deleteNode(5);
+        System.out.println(linkedlist);
+
+        // Deletion from last
+        linkedlist.deleteNode(9);
+        System.out.println(linkedlist);
 
         sc.close();
     }
